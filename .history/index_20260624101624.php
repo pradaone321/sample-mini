@@ -19,16 +19,26 @@
                     <div class="news-main">
                         <div class="news-list-simple">
 
-<?php if (have_posts()) : while(have_posts()) : the_post(); ?>
-
+<?php
+ if (have_posts()) : while(have_posts() : the_post();)
+?>
                             <article class="news-item-simple">
-                                <time datetime="<?php echo get_the_date('Y-m-d') ?>"><?php echo get_the_date('Y.m.d'); ?></time>
+                                <time datetime="2024-01-15">2024.01.15</time>
                                 <span class="news-category category-release">Release</span>
-                                <p class="news-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                                <p class="news-text"><a href="news.html#news1">新サービス開始のお知らせ。この度、新サービスを開始いたしました。詳細はこちらをご覧ください。</a></p>
+                            </article>
+                            <article class="news-item-simple">
+                                <time datetime="2024-01-10">2024.01.10</time>
+                                <span class="news-category category-news">News</span>
+                                <p class="news-text"><a href="news.html#news2">年末年始の営業について。年末年始の営業時間についてお知らせいたします。</a></p>
+                            </article>
+                            <article class="news-item-simple">
+                                <time datetime="2024-01-05">2024.01.05</time>
+                                <span class="news-category category-news">News</span>
+                                <p class="news-text"><a href="news.html#news3">新年のご挨拶。新年あけましておめでとうございます。本年もよろしくお願いいたします。</a></p>
                             </article>
 
- <?php endwhile; endif; ?>
-
+                            <?php endwhild; e
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,7 @@
 <!--記事があるなしのループ処理-->
 <?php if(have_posts()) :  //記事があるない？　rue/or/folseを返す
  while (have_posts()) : //記事があればtrue なければfolese繰り返す
-    the_post(); ?> <!--記事情報を取得する-->
+    the_post(); ?> //記事情報
 
                     <article class="news-detail">
                         <div class="news-detail-header">

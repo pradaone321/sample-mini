@@ -4,10 +4,10 @@
         <section class="content">
             <div class="container">
                 <div class="news-detail-wrapper">
-<!--記事があるなしのループ処理-->
-<?php if(have_posts()) :  //記事があるない？　rue/or/folseを返す
- while (have_posts()) : //記事があればtrue なければfolese繰り返す
-    the_post(); ?> <!--記事情報を取得する-->
+
+<?php if (have_posts()) : 
+  while (have_posts()) : 
+    the_post();
 
                     <article class="news-detail">
                         <div class="news-detail-header">
@@ -27,8 +27,6 @@
                         </div>
                     </article>
 
-<?php endwhile;
-endif; ?>
 
 
                 </div>

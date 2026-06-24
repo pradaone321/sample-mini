@@ -22,9 +22,9 @@
 <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
 
                             <article class="news-item-simple">
-                                <time datetime="<?php echo get_the_date('Y-m-d') ?>"><?php echo get_the_date('Y.m.d'); ?></time>
+                                <time datetime="<?php echo get_the_date('Y-m-d') ?>"><</time>
                                 <span class="news-category category-release">Release</span>
-                                <p class="news-text"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                                <p class="news-text"><a href="news.html#news1">新サービス開始のお知らせ。この度、新サービスを開始いたしました。詳細はこちらをご覧ください。</a></p>
                             </article>
 
  <?php endwhile; endif; ?>
